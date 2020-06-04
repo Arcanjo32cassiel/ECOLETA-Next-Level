@@ -1,0 +1,39 @@
+@media (max-width:900px) {
+    #page-home {
+        background-position-x: 80vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+    }
+    #page-home main {
+        align-items: center;
+    }
+}
+
+@media (min-width:901px) and (max-width:950px) {
+    #page-home {
+        height: 100vh;
+        background: url('../assets/media-home-background\ .svg') no-repeat;
+        background-position-y: 10vw;
+        background-position-x: 50vw;
+    }
+}
+
+@media (max-width:550px) {
+    #page-home main a {
+        margin-top: 40px;
+    }
+    #page-home main,
+    header img {
+        align-items: center;
+        transform: translateY(-30px);
+    }
+}
