@@ -1,5 +1,15 @@
-# ECOLETA-Next-Level
-Aplicação desenvolvida na semana Next_Level_Week-1.
-♻️ Aplicação web para coleta de resíduos de forma eficiente. - Suburbanno/Ecoleta
-![page1ecoleta](https://user-images.githubusercontent.com/63671410/83700045-1613b580-a5dc-11ea-8502-984432c716a4.png)
-page  1 do Ecoleta.
+<h2>ECOLETA-Next-Level</h2>
+<p>Aplicação desenvolvida na semana Next_Level_Week-1.
+♻️ Aplicação web para coleta de resíduos de forma eficiente.</p>
+
+![paginitial](https://user-images.githubusercontent.com/63671410/83902201-56854780-a732-11ea-85e4-4b31d49432ed.png)
+<b>Página inicial do Ecoleta</b>
+
+![cadcol](https://user-images.githubusercontent.com/63671410/83901098-8d5a5e00-a730-11ea-90d8-cdce79ee60a3.png)
+<b>Página de cadastro  de ponto de coleta</b>
+
+![modal](https://user-images.githubusercontent.com/63671410/83901441-25f0de00-a731-11ea-836e-064504c1c42a.png)
+<b>Modal para pesquisar por pontos de coletas</b>
+
+![pontos](https://user-images.githubusercontent.com/63671410/83902532-e7f4b980-a732-11ea-97c2-1320f55a72eb.png)
+<b>Página para mostrar pontos de coletas</b>
