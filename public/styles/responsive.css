@@ -21,6 +21,15 @@
     }
 }
 
+@media (max-width:645px) {
+    #page-create-point .field-grup {
+        flex-direction: column;
+    }
+    #page-create-point .field-grup .field+.field {
+        margin-left: 0;
+    }
+}
+
 @media (min-width:901px) and (max-width:950px) {
     #page-home {
         height: 100vh;
