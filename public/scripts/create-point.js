@@ -58,7 +58,7 @@ for (let inten of intenstocolect) {
 
 }
 
-const collectedItems = document.querySelector("input[name=items]")
+const collectedItems = document.querySelector("input[name=intens]")
 
 let selectedItems = []
 
@@ -66,8 +66,10 @@ function handleSelectedItem(envent) {
     const intenli = event.target;
     //adicionar ou remover a classe
     intenli.classList.toggle("selected");
+
     const itemId = intenli.dataset.id
 
+    console.log('ITEM ID: ', itemId)
 
 
     //verificação se contem intens selecionado, se sim 
@@ -94,6 +96,8 @@ function handleSelectedItem(envent) {
     else {
         selectedItems.push(itemId)
     }
+
+    console.log('selectedItems: ', selectedItems)
 
     //  atualizar  o campo escondido comm osdados selecionados
     collectedItems.value = selectedItems

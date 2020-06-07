@@ -1,123 +1,134 @@
-{% extends "layout.html" %}
+    {% extends "layout.html" %}
 
-{% set pageId = "page-create-point" %}
+    {% set pageId = "page-create-point" %}
 
-{% block title %}
-    <title>Criar um ponto de coleta</title>
-{% endblock title %}
+    {% block title %}
+        <title>Criar um ponto de coleta</title>
+    {% endblock title %}
 
-{% block styles %}
-    <link rel="stylesheet" href="/styles/create.css">
-{% endblock styles %}
+    {% block styles %}
+        <link rel="stylesheet" href="/styles/create.css">
+        <link rel="stylesheet" href="/styles/modal.css">
+    {% endblock styles %}
 
-{% block content %}
+    {% block content %}
 
-    {% include "partials/page-header.html" %}
+        {% include "partials/page-header.html" %}
 
-    <form action="">
-        <h1>Cadastro do ponto de coleta</h1>
+        <form action="/savepoint" method="POST" >
+       
+            <h1>Cadastro do ponto de coleta</h1>
 
-        <fieldset>
-            <legend>
-                <h2>Dados da entidade</h2>
-            </legend>
-
- <div class="field-grup">
-            <div class="field">
-                <label for="name">Nome da entidade
-                </label>
-                <input type="text" name="name" required="required">
-            </div>
-
-             <div class="field">
-                <label for="name">Imagem da Entidade
-                </label>
-                <input type="url" name="image" placeholder="htpp://" required="required">
-            </div>
-</div>
-            <div class="field-grup">
-
-                <div class="field">
-                    <label for="Adress">Endereço</label>
-                    <input type="text" name="Adress" required="required">
-                </div>
-
-                <div class="field">
-                    <label for="Adress2">Numero/Complemento</label>
-                    <input type="text" name="Adress2" required="required">
-                </div>
-
-            </div>
+            <fieldset>
+                <legend>
+                    <h2>Dados da entidade</h2>
+                </legend>
 
             <div class="field-grup">
-
                 <div class="field">
-                    <label for="state">Estado</label>
-                    <select name="uf" required="required">
-                        <option value="">Selecione estado</option>
-
-                    </select>
-
-                    <input type="hidden" name="state">
+                    <label for="name">Nome da entidade
+                    </label>
+                    <input type="text" name="name" required="required">
                 </div>
 
                 <div class="field">
-                    <label for="city">Cidade</label>
-                    <select name="city" required="required" disabled="disabled">
-                        <option value="">Selecione a cidade</option>
-                    </select>
+                    <label for="name">Imagem da Entidade
+                    </label>
+                    <input type="url" name="image" placeholder="htpp://" required="required">
+                </div>
+        </div>
+                <div class="field-grup">
+
+                    <div class="field">
+                        <label for="address">Endereço</label>
+                        <input type="text" name="address" required="required">
+                    </div>
+
+                    <div class="field">
+                        <label for="address2">Numero/Complemento</label>
+                        <input type="text" name="address2" required="required">
+                    </div>
+
                 </div>
 
-            </div>
-        </fieldset>
+                <div class="field-grup">
 
-        <fieldset>
-            <legend>
-                <h2>Items de coleta</h2>
-                <span>Selecione um ou mais itens abaixo</span>
-            </legend>
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <select name="uf" required="required">
+                            <option value="">Selecione estado</option>
 
-            <div class="intens-grid">
-                <li data-id="1">
-                    <img src="/assets/lampadas.svg" alt="Lanpadas">
-                    <span>Lanpandas</span>
-                </li>
+                        </select>
 
-                <li data-id="2">
-                    <img src="/assets/baterias.svg" alt="baterias">
-                    <span>Pilhas e Baterias</span>
-                </li>
+                        <input type="hidden" name="state">
+                    </div>
 
-                <li data-id="3">
-                    <img src="/assets/papeis-papelao.svg" alt="Papéis e papelao">
-                    <span>Papéis e Papelão</span>
-                </li>
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" required="required" disabled="disabled">
+                            <option value="">Selecione a cidade</option>
+                        </select>
+                    </div>
 
-                <li data-id="4">
-                    <img src="/assets/eletronicos.svg" alt="Eletronicos">
-                    <span>
-                        ResidusEletrônicos</span>
-                </li>
+                </div>
+            </fieldset>
 
-                <li data-id="5">
-                    <img src="/assets/organicos.svg" alt="orgânicos">
-                    <span>
-                        Residuos Orgânicos</span>
-                </li>
+            <fieldset>
+                <legend>
+                    <h2>Items de coleta</h2>
+                    <span>Selecione um ou mais itens abaixo</span>
+                </legend>
 
-                <li data-id="6">
-                    <img src="/assets/oleo.svg" alt="Óleo de cozinha">
-                    <span>Óleo de cozinha</span>
-                </li>
-            </div>
-            <input type="hidden" name="items" value="">
-        </fieldset>
+                <div class="intens-grid">
+                    <li data-id="
+                        &nbsp;Lânpandas">
+                        <img src="/assets/lampadas.svg" alt="Lâsnpadas">
+                        <span>Lânpadas</span>
+                    </li>
 
-        <button type="submit">Cadastrar ponto de coleta</button>
+                    <li data-id="&nbsp;Pilhas e Baterias">
+                        <img src="/assets/baterias.svg" alt="baterias">
+                        <span>Pilhas e Baterias</span>
+                    </li>
 
-    </form>
-{% endblock content %}
+                    <li data-id="&nbsp;Papéis e Papelão">
+                        <img src="/assets/papeis-papelao.svg" alt="Papéis e papelao">
+                        <span>Papéis e Papelão</span>
+                    </li>
 
-{% block scripts %}
-    <script src="/scripts/create-point.js"></script>
-{% endblock scripts %}
+                    <li data-id="&nbsp;Residuos  Eletrônicos">
+                        <img src="/assets/eletronicos.svg" alt="Eletronicos">
+                        <span>
+                            Residuos Eletrônicos</span>
+                    </li>
+
+                    <li data-id="&nbsp;Residuos Orgânicos">
+                        <img src="/assets/organicos.svg" alt="orgânicos">
+                        <span>
+                            Residuos Orgânicos</span>
+                    </li>
+
+                    <li data-id="&nbsp;Óleo de cozinha">
+                        <img src="/assets/oleo.svg" alt="Óleo de cozinha">
+                        <span>Óleo de cozinha</span>
+                    </li>
+                </div>
+                <input type="hidden" name="intens" value="">
+            </fieldset>
+
+            <button type="submit">Cadastrar ponto de coleta</button>
+
+        </form>
+
+       
+    {% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {%include "partials/modal-point.html"%}
+    {% endif %}    
+{% endblock modal %}
+
+    {% block scripts %}
+        <script src="/scripts/create-point.js"></script>
+    {% endblock scripts %}
