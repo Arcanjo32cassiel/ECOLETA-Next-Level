@@ -13,3 +13,6 @@
 
 ![pontos](https://user-images.githubusercontent.com/63671410/83902532-e7f4b980-a732-11ea-97c2-1320f55a72eb.png)
 <b>Página para mostrar pontos de coletas</b>
+
+![Captura de tela de 2020-06-07 20-37-40](https://user-images.githubusercontent.com/63671410/83982695-fd1e4380-a8fe-11ea-98ad-02e560a6629d.png)
+<b>Modal para mostrar que o cadastro foi concluido</b>
