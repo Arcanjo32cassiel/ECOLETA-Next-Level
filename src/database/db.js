@@ -87,13 +87,13 @@
 
     //     // 4 deletar um dado  da tabela
 
-    // db.run(`DELETE FROM places`, //WHERE id  = ?` [142],
+    //     db.run(`DELETE FROM places`, //WHERE id  = ?` [142],
 
-    //     function(err) {
-    //         if (err) {
-    //             return console.log(err)
-    //         }
-    //         console.log("registro deletado com sucesso")
-    //     })
+    //         function(err) {
+    //             if (err) {
+    //                 return console.log(err)
+    //             }
+    //             console.log("registro deletado com sucesso")
+    //         })
 
-    //})
+    // })
