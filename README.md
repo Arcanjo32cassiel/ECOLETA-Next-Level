@@ -1,6 +1,19 @@
 <h2>ECOLETA-Next-Level</h2>
 <p>Aplicação desenvolvida na semana Next_Level_Week-1.
 ♻️ Aplicação web para coleta de resíduos de forma eficiente.</p>
+<p>Tecnologias utilizadas:</p>
+
+.HTML
+.CSS
+.NODE.JS
+.Express
+
+<P>API:</P>
+
+.API de localidades do IBGE
+
+
+
 
 ![paginitial](https://user-images.githubusercontent.com/63671410/83902201-56854780-a732-11ea-85e4-4b31d49432ed.png)
 <b>Página inicial do Ecoleta</b>
